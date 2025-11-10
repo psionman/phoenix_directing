@@ -160,6 +160,8 @@ To create an 8x3 (24) board tournament
 ![24 board tournament boards](_images/twentyfour_boards_02.png)
 
 
+## To setup a 21 board tournament
+
 To create an 7x3 (21) board tournament
 
 ![21 board tournament identification](_images/twentyone_boards_01.png)
