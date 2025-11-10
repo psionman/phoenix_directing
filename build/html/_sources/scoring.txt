@@ -1,0 +1,262 @@
+Scoring
+=======
+
+I recommend that you have this document open in a tab in your web browser. There are many complicated URLs used in this process and it is easier to open them by clicking rather than copy and paste or typing in.
+I suggest that rather then just clicking on links, you right-click and use *Open Link in New Tab*. This means that this document is always open.
+
+Most of these functions are undertaken in a browser and one function in particular (:ref:`generate scorecards <create_scorecard>`)
+must  be run in Chrome or one of its derivatives.
+So I recommend that you install Chrome (`https://www.google.com/chrome <https://www.google.com/chrome/>`_)
+if not already on your PC, and use it for scoring.
+
+The procedures must be carried out in the order in which they appear below.
+
+**NB** If for any reason you do not intend to send a player's results to the EBU, then temporarily remove their name from the *phoenix_bbonames.txt* file.
+
+If you need to **adjust scores** this can be done before the *BBO to XML converter* (see xxx below).
+
+Installing the *BBX* Chrome add-on
+----------------------------------
+
+This only needs to be done once. When it is installed it can be used for future tournaments.
+
+In the Chrome browser, navigate to the following URL:
+
+`https://chrome.google.com/webstore/detail/bbo-extractor/omcdgcoibkfkiikoniabecnbbacmhfij <https://chrome.google.com/webstore/detail/bbo-extractor/omcdgcoibkfkiikoniabecnbbacmhfij>`_
+
+Click on the *Add to Chrome* button.
+
+A small icon with the legend *BBX* should appear in the top-right of Chrome. You will be using this later. (You might wish to 'pin' this app to the browser so that it's always there.)
+
+.. _upload_bridgewebs:
+
+Update the *phoenix_bbonames.txt* file
+--------------------------------------
+
+Before we upload data to EBU we need to have a file of registered players in the correct format.
+
+You will need to have a copy of the latest version of the file *phoenix_bbonames.txt* on your computer.
+
+When a player registers their details are will appear in this on-line workbook `https://docs.google.com/spreadsheets/d/1DLdT67k0hdONGrm2uKFwJbjO8RcYBOj5Rj3SXpfior0/edit#gid=617644318 <https://docs.google.com/spreadsheets/d/1DLdT67k0hdONGrm2uKFwJbjO8RcYBOj5Rj3SXpfior0/edit#gid=617644318>`_.
+
+.. figure:: /images/players_01.png
+    :height: 83 pt
+    :width: 562 pt
+    :alt: Player Workbook
+    :figclass: align-center
+    :name: players_01
+
+    Player Workbook
+
+1. Open the workbook given in the link above. Note that there are 6 columns. The left hand 4 columns are populated when the player submits their form (registers).
+
+2. Sometimes the player enters spurious information in their BBO user name field. This will need to be removed manually.
+
+3. We also require a first and last name; specifically there must be precisely one space in the name field.
+
+4. People have been known to register multiple times. Please remove duplicates manually (TODO is this necessary?)
+
+5. If use the user does not have an EBU number, use the number 888888. This will ensure the file gets uploaded without EBU attempting to match the name to someone else's number.
+
+6. The fifth column contains a formula that generates the players' details in a form that is required for EBU P2P uploads (see :ref:`Sending P2P to EBU <sending_p2p>` below). To fill in this cell for a new user, copy and paste the formula from an existing player.
+
+7. To add newly registered players' details to the *phoenix_bbonames.txt* file, open the file in a text editor (not *WORD* or other word processor).
+
+8. Highlight the new cells in column 5 of the worksheet, and copy the cells using the mouse or *Ctrl+C*
+
+9. On a new line in the *phoenix_bbonames.txt* file paste the new entries using the mouse or *Ctrl+V*.
+
+10. Save the file.
+
+
+Upload scores to BridgeWebs
+---------------------------
+
+1. Navigate to the club's BBO Tournament list at:
+
+    `http://webutil.bridgebase.com/v2/tarchive.php?m=h&h=vEBU211328&d=vEBU211328 <http://webutil.bridgebase.com/v2/tarchive.php?m=h&h=vEBU211328&d=vEBU211328>`_
+
+    You might have to login using the director's login (vEBU211328) and password.
+
+    This will list the club's tournaments (they stay here for one week only).
+
+    .. figure:: /images/scoring_01.png
+        :height: 63 pt
+        :width: 500 pt
+        :alt: Find tournament
+        :figclass: align-center
+        :name: scoring_01
+
+        Find tournament
+
+2. Click on *boards* against the tournament you want (check the date).
+
+    It might indicate that the scores are not ready. We have no control over when BBO make the files available, but it should be within a few hours.
+
+    When the results are available you will see a screen similar to :numref:`scoring_02a` List travellers:
+
+    .. figure:: /images/scoring_02a.png
+        :height: 227 pt
+        :width: 500 pt
+        :alt: List travellers
+        :figclass: align-center
+        :name: scoring_02a
+
+        List travellers
+
+3. Check later boards to make sure there are no averages. Adjust if necessary.
+
+4. Take the 15 character code in the heading of the board list after *Tourney*
+
+    (e.g. *9779-1591639307*).  Concatenate it with the URL:
+
+    `http://webutil.bridgebase.com/v2/tview.php?t= <http://webutil.bridgebase.com/v2/tview.php?t=>`_
+
+    to give (for example) a link similar to:
+
+    .. code-block:: text
+
+        http://webutil.bridgebase.com/v2/tview.php?t=9779-1591639307
+
+    (I find this easier to do in a text editor. e.g. Notepad.)
+
+    Use this created URL to navigate to a screen similar to :numref:`scoring_03` Pairs scores:
+
+    .. figure:: /images/scoring_03.png
+        :height: 406 pt
+        :width: 582 pt
+        :alt: List travellers
+        :figclass: align-center
+        :name: scoring_03
+
+        Pairs scores
+
+    .. _create_scorecard:
+
+5. Click on the *BBX* icon in the browser (top right).
+This generates a scorecard every few seconds and will ask if you want so save the *csv* file. Click on *Save*.
+
+    You will see the message BBO extractor running. When it's finished you might see a dialog box (doesn't always appear!)
+
+.. figure:: /images/bbo_extractor.png
+    :height: 87 pt
+    :width: 226 pt
+    :alt: BBO Extractor
+    :figclass: align-center
+    :name: bbo_extractor
+
+    BBO Extractor
+
+Click on *OK* and you will see the final dialog
+
+6. You will see the *Calculation of makeable contracts* alert.
+
+.. figure:: /images/scoring_07.png
+    :height: 147 pt
+    :width: 260 pt
+    :alt: PBN File Extractor
+    :figclass: align-center
+    :name: pbn_extractor
+
+    PBN File Extractor
+
+
+7. Two files should now be in your *Downloads* directory:
+
+    * <tournament name and date>.csv
+    * <tournament name and date>.pbn
+
+    Check that they are there. If not, re-run the conversion.
+
+.. _bbo_xml_converter:
+
+8. Open the BBO to XML converter `https://dds.bridgewebs.com/bbotoxml/bbotoxml.htm?p=1 <https://dds.bridgewebs.com/bbotoxml/bbotoxml.htm?p=1>`_.
+
+    Complete the fields as shown (except *Master Points*). Note that the *Club ID number* is the 6 character EBU number, and the *UMS Charge Rate* should be 10. Enter your name as the Contact.
+
+    Click on the *Load Names* button and open the *phoenix_bbonames.txt* file when requested. When done it will show
+    a message: *xx names loaded* where *xx* is the number of names in *phoenix_bbonames.txt*.
+
+    .. figure:: /images/scoring_04.png
+        :height: 297 pt
+        :width: 450 pt
+        :alt: XML Converter
+        :figclass: align-center
+        :name: scoring_04
+
+        XML Converter
+
+(The order of the fields on this page might vary - check)
+
+9. Click on *Create XML file* and select the relevant **csv** file from the downloads folder.
+
+    This will create an *XML* file named *<tournament name and date>_UMS.xml* (this will be used in :ref:`Sending P2P to EBU <sending_p2p>` below).
+
+    Check that the file is in your *Downloads* directory, if not, re-run.
+
+10. Click on *Create XML for Bridgewebs* and again select the csv file.
+
+    This will create a second *XML* file in downloads named *<tournament name and date>.xml* (this will be used in the next section).
+
+    Check that the file is in your *Downloads* directory, if not, re-run.
+
+    Note, there are two *xml* files with similar names: one with *UMS* and one without.
+
+11. Navigate to the Phoenix Bridgewebs site at `https://www.bridgewebs.com/phoenix <https://www.bridgewebs.com/phoenix/>`_,
+and click on *Administration* in the left-hand menu. Enter the BridgeWebs password.
+
+
+.. figure:: /images/scoring_05.png
+    :height: 208 pt
+    :width: 508 pt
+    :alt: Results to Bridgewebs
+    :figclass: align-center
+    :name: scoring_05
+
+    Results to Bridgewebs
+
+Here, you will be selecting files from from your *Downloads* directory.
+
+Against *Select the Results file*, select *<tournament name and date>.xml*.
+
+Against *Select the Deal File*, select *<tournament name and date>.pbn*.
+
+You can navigate around the scores and boards to satisfy yourself that the upload has worked correctly.
+
+**NB** this can be repeated if, for example, some names are missing from the *phoenix_bbonames.txt* file.
+
+.. _sending_p2p:
+
+Sending P2P to EBU
+------------------
+
+1. On the EBU website at `https://www.ebu.co.uk <https://www.ebu.co.uk>`_, click on *My EBU*;
+
+2. Enter the club EBU number and password;
+
+3. Click on the *submit* tab on the top-right. Use *Browse* to select the file:
+
+    *<tournament name and date>_UMS.xml*
+
+    from your *Downloads* directory;
+
+4. Click on *Upload*.
+
+5. You might get a request to resolve unknown players (for example if you have used substitutes) - they are guests
+
+Cleaning up used files
+----------------------
+
+When you are satisfied that the results have all been uploaded, it might be as well to remove the work files from
+your *Downloads* directory. This is to avoid any confusion in future weeks because
+the file names will look similar. The files to remove are:
+
+1. *<tournament name and date>.pbn*
+
+2. *<tournament name and date>.xml*
+
+3. *<tournament name and date>_UMS.xml*
+
+4. *<tournament name and date>.csv*
+
+And that is it for that tournament!

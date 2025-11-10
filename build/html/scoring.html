@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Scoring &#8212; Directing a Phoenix Tournament  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="_static/bootstrap-sphinx.css?v=4468db6d" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=89215f19" />
+    <script src="_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <link rel="icon" href="_static/favicon.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Transferring $BBO" href="dollar_transfers.html" />
+    <link rel="prev" title="The bbo_names.txt file" href="bbo_names.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="_static/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+<script type="text/javascript" src="_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          Directing a Phoenix Tournament</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="create_tournament.html">Creating a tournament</a></li>
+<li class="toctree-l1"><a class="reference internal" href="player_management.html">Managing players</a></li>
+<li class="toctree-l1"><a class="reference internal" href="directing_a_tournament.html">Directing a Tournament</a></li>
+<li class="toctree-l1"><a class="reference internal" href="directors_chat.html">Director’s chat</a></li>
+<li class="toctree-l1"><a class="reference internal" href="handling_queries.html">Handling Queries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="uploading_deal_files.html">Uploading deal files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="replaying_hands.html">Replaying hands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bbo_names.html">The <em>bbo_names.txt</em> file</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Scoring</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dollar_transfers.html">Transferring $BBO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="browser.html">Installing and configuring your browser</a></li>
+<li class="toctree-l1"><a class="reference internal" href="join_zoom.html">Join a Zoom Meeting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="real_bridge.html">Real Bridge</a></li>
+<li class="toctree-l1"><a class="reference internal" href="videos.html">Videos for Directors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="versions.html">Versions</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Scoring</a><ul>
+<li><a class="reference internal" href="#cin-and-other-charity-tournaments">CIN and other charity tournaments</a></li>
+<li><a class="reference internal" href="#prerequisites">Prerequisites</a></li>
+<li><a class="reference internal" href="#preliminaries">Preliminaries</a></li>
+<li><a class="reference internal" href="#summary">Summary</a></li>
+<li><a class="reference internal" href="#select-tournament-boards">Select tournament boards</a></li>
+<li><a class="reference internal" href="#run-bbo-extractor">Run BBO extractor</a></li>
+<li><a class="reference internal" href="#bbo-to-xml-converter">BBO to XML converter</a></li>
+<li><a class="reference internal" href="#upload-to-phoenix">Upload to Phoenix</a></li>
+<li><a class="reference internal" href="#upload-to-ebu">Upload to EBU</a></li>
+<li><a class="reference internal" href="#cleaning-up-redundant-files">Cleaning up redundant files</a></li>
+<li><a class="reference internal" href="#adjust-a-score">Adjust a score</a></li>
+<li><a class="reference internal" href="#access-a-user-s-historical-boards">Access a user’s historical Boards</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="bbo_names.html" title="Previous Chapter: The bbo_names.txt file"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; The bbo_names...</span>
+    </a>
+  </li>
+  <li>
+    <a href="dollar_transfers.html" title="Next Chapter: Transferring $BBO"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Transferring $BBO &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="_sources/scoring.md.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li><a class="reference internal" href="#">Scoring</a><ul>
+<li><a class="reference internal" href="#cin-and-other-charity-tournaments">CIN and other charity tournaments</a></li>
+<li><a class="reference internal" href="#prerequisites">Prerequisites</a></li>
+<li><a class="reference internal" href="#preliminaries">Preliminaries</a></li>
+<li><a class="reference internal" href="#summary">Summary</a></li>
+<li><a class="reference internal" href="#select-tournament-boards">Select tournament boards</a></li>
+<li><a class="reference internal" href="#run-bbo-extractor">Run BBO extractor</a></li>
+<li><a class="reference internal" href="#bbo-to-xml-converter">BBO to XML converter</a></li>
+<li><a class="reference internal" href="#upload-to-phoenix">Upload to Phoenix</a></li>
+<li><a class="reference internal" href="#upload-to-ebu">Upload to EBU</a></li>
+<li><a class="reference internal" href="#cleaning-up-redundant-files">Cleaning up redundant files</a></li>
+<li><a class="reference internal" href="#adjust-a-score">Adjust a score</a></li>
+<li><a class="reference internal" href="#access-a-user-s-historical-boards">Access a user’s historical Boards</a></li>
+</ul>
+</li>
+</ul>
+
+  <li>
+    <a href="bbo_names.html" title="Previous Chapter: The bbo_names.txt file"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; The bbo_names...</span>
+    </a>
+  </li>
+  <li>
+    <a href="dollar_transfers.html" title="Next Chapter: Transferring $BBO"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Transferring $BBO &raquo;</span>
+    </a>
+  </li>
+<div id="sourcelink">
+  <a href="_sources/scoring.md.txt"
+     rel="nofollow">Source</a>
+</div>
+<form action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+        </div>
+      </div>
+    <div class="body col-md-9 content" role="main">
+      
+  <section id="scoring">
+<h1>Scoring<a class="headerlink" href="#scoring" title="Link to this heading">¶</a></h1>
+<section id="cin-and-other-charity-tournaments">
+<h2>CIN and other charity tournaments<a class="headerlink" href="#cin-and-other-charity-tournaments" title="Link to this heading">¶</a></h2>
+<p>The UMS code for CIN tournaments is 06 and for other charity events 03!</p>
+<p>After the CIN event you need to send the xml file to</p>
+<p>results&#64;simpairs.com</p>
+<p>The subject line should be “<session number> England”</p>
+<p>e.g. *4136 England”</p>
+</section>
+<section id="prerequisites">
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Link to this heading">¶</a></h2>
+<p>The scoring process must be carried out in a Chrome browser or one of its derivatives (see <a class="reference external" href="browser.html#installing-and-configuring-your-browser">Installing and configuring your browser</a>), and they must be carried out in the order in which they appear below. (A list of urls and how to open them with one click can be found <a class="reference external" href="browser.html#urls-that-are-needed-for-the-scoring-process">here</a>).</p>
+<p>(Note for Windows users: by default Windows does not display file extensions (e.g. <em>.csv</em>) in their file browser and this might cause confusion (and is in fact a security risk). To enable the display of file extensions see <a class="reference external" href="https://www.thewindowsclub.com/show-file-extensions-in-windows">this document</a>)</p>
+</section>
+<section id="preliminaries">
+<h2>Preliminaries<a class="headerlink" href="#preliminaries" title="Link to this heading">¶</a></h2>
+<p>Ensure that you have the latest version of the <em>phoenix bbonames</em> file on your computer. If robots are playing, ensure that you have a suitable entry in the names file (see <a class="reference internal" href="bbo_names.html"><span class="doc">The phoenix bbonames file</span></a>).</p>
+<p><strong>NB</strong> If for any reason you do not intend to send a player’s results to the EBU, then temporarily change their EBU number in the <em>phoenix bbonames</em> file to <strong>888888</strong>.</p>
+<p>If you need to <strong>adjust scores</strong> this can be done in BBO  before the BBO scores are published (within 15 minutes or so of the end of the tournament) (see <a href="#adjust_score">Adjust a score</a>). However, the simpler method is to do it during the scoring process before the <em>BBO to XML converter</em> (see <a href="#scoring_update_scores">the BBO to XML converter</a>).</p>
+<p>Any stage can be repeated if, for example, some names are missing from the <em>phoenix_bbonames.txt</em> file. No permanent damage can be done, so do not worry on that score. (Just remember that if a process is repeated the file in your <em>Downloads</em> directory will have a version number appended.)</p>
+</section>
+<section id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Link to this heading">¶</a></h2>
+<p>When you are familiar with the process, this summary should suffice:</p>
+<ol class="simple">
+<li><p><a href='#select_tournament'>Select tournament boards</a></p></li>
+<li><p><a href='#bbo_extractor'>run BBO extractor</a></p></li>
+<li><p><a href='#scoring_update_scores'>BBO to XML converter</a> (uses <em>&lt;tournament name and date&gt;.csv</em>)</p></li>
+<li><p><a href='#update_bridgewebs'>upload to Phoenix</a> (uses <em>&lt;tournament name and date&gt;.xml</em> and <em>&lt;tournament name and date&gt;.pbn</em>)</p></li>
+<li><p><a href='#update_ebu'>upload to EBU</a> (uses <em>&lt;tournament name and date&gt;.xml</em>)</p></li>
+</ol>
+<p>Launch the browser and open the urls shown at <a href="browser.html.html#multiple-url-opener-addon">Scoring web pages</a> in different tabs (see <a class="reference external" href="browser.html.html#opening-multiple-urls">Opening multiple urls</a>).</p>
+</section>
+<section id="select-tournament-boards">
+<h2>Select tournament boards<a class="headerlink" href="#select-tournament-boards" title="Link to this heading">¶</a></h2>
+<p><a id='select_tournament'></a></p>
+<ol>
+<li><p>Navigate to the club’s BBO Tournament list at:</p>
+<p><a class="reference external" href="http://webutil.bridgebase.com/v2/tarchive.php?m=h&amp;h=vEBU211328&amp;d=vEBU211328">http://webutil.bridgebase.com/v2/tarchive.php?m=h&amp;h=vEBU211328&amp;d=vEBU211328</a></p>
+<p>You might have to login using the director’s login (vEBU211328) and password.</p>
+<p>This will list the club’s tournaments (they stay here for one week only).</p>
+<p><img alt="Find tournament" src="_images/scoring_01a.png" /></p>
+</li>
+<li><p>Click on The tournament number for the one that you are scoring (check the date).</p>
+<p>It might indicate that the scores are not ready. We have no control over when BBO makes the files available, but usually the file are available within 20 minutes of the end of the tournament.</p>
+<p>When the results are available you will see a page similar to:</p>
+ <img src="_images/scoring_03.png" alt="Pairs scores" width="500"><p><a id='bbo_extractor'></a></p>
+</li>
+</ol>
+</section>
+<section id="run-bbo-extractor">
+<h2>Run BBO extractor<a class="headerlink" href="#run-bbo-extractor" title="Link to this heading">¶</a></h2>
+<p>Click on the <em>BBX</em> icon in the browser (top right).</p>
+<p>The <em>BBO Running</em> alert will appear:</p>
+<img src="_images/scoring_10.png" alt="BBO Running" width="300"><p>This process generates a scorecard every few seconds and the screen will flash alarmingly for some seconds.</p>
+<p>When it’s finished you will see a dialog box:</p>
+<img src="_images/bbo_extractor.png" alt="BBO Extractor" width="300"><p>Click on <em>OK</em> and you will see the final dialog:</p>
+<img src="_images/scoring_07.png" alt="PBN File Extractor" width="300"><ol>
+<li><p>The following two files should now be in your <em>Downloads</em> directory:</p>
+<ul class="simple">
+<li><p>&lt;tournament name and date&gt;.csv</p></li>
+<li><p>&lt;tournament name and date&gt;.pbn</p></li>
+</ul>
+<p>Check that they are there. If not, re-run the conversion.</p>
+<p><a id="scoring_update_scores"></a></p>
+</li>
+</ol>
+</section>
+<section id="bbo-to-xml-converter">
+<h2>BBO to XML converter<a class="headerlink" href="#bbo-to-xml-converter" title="Link to this heading">¶</a></h2>
+<ol>
+<li><p>Open the BBO to XML converter tab</p>
+<p>(<a class="reference external" href="https://dds.bridgewebs.com/bbotoxml/bbotoxml.htm?p=1">the converter can be downloaded here</a>).</p>
+ <img src="_images/scoring_04a.png" alt="XML Converter" width="600"><p>If any scores need adjustment, <strong>do it now</strong>!</p>
+<p>a. Click on <em>Review/Edit CSV</em> in the top left of the form. You will be asked to select a file, and it should be the <em>&lt;tournament name and date&gt;.csv</em> file created in stage 7 above.</p>
+ <img src="_images/scoring_08.png" alt="Select file for editing" width="600"><p>b. Click on <em>Edit Scores</em>.</p>
+<p><img alt="Edit a score" src="_images/scoring_09.png" /></p>
+<p>c. Make the changes you need to, and click on <em>Save CSV</em>. You may the proceed as below.</p>
+</li>
+<li><p>Complete the fields as shown (except <em>Master Points</em>). Note that the <em>Club ID number</em> is the 6 character EBU number, and the <em>UMS Charge Rate</em> should be 10. Enter your name as the Contact. (The order of the fields on this page might vary - check)</p>
+<p>Click on the <em>Load Names</em> button and open the <em>bbo_names</em> file that you have saved in your  downloads directory (see <a href="bbo_names.html#save_names_file">these instructions</a>). It will show
+a message: <em>xx names loaded</em> where <em>xx</em> is the number of names in the <em>bbo_names file</em>.</p>
+</li>
+<li><p>Click on <em>Create XML file</em> and select the relevant <strong>csv</strong> (<em>&lt;tournament name and date&gt;.csv</em>) file from the downloads folder. This process is more or less instantaneous,</p>
+<p>This will create an <em>XML</em> file named <em>&lt;tournament name and date&gt;.xml</em> (this will be used in <em>Sending scores to Bridgewebs</em> and <em>Sending P2P to EBU</em> below).</p>
+<p>Check that the file is in your <em>Downloads</em> directory, if not, re-run.</p>
+</li>
+</ol>
+<p><a id='update_bridgewebs'></a></p>
+</section>
+<section id="upload-to-phoenix">
+<h2>Upload to Phoenix<a class="headerlink" href="#upload-to-phoenix" title="Link to this heading">¶</a></h2>
+<ol>
+<li><p>Open the Phoenix Bridgewebs tab (<a class="reference external" href="https://www.bridgewebs.com/cgi-bin/bwoq/bw.cgi?club=phoenix&amp;pid=upload_results">https://www.bridgewebs.com/cgi-bin/bwoq/bw.cgi?club=phoenix&amp;pid=upload_results</a>)</p></li>
+<li><p>Enter the BridgeWebs password.</p>
+ <img src="_images/scoring_05.png" alt="Results to Bridgewebs" width="600"><p>Here, you will be selecting files from from your <em>Downloads</em> directory.</p>
+</li>
+<li><p>Against <em>Select the Results file</em>, select <em>&lt;tournament name and date&gt;.xml</em>. (Look for the <em>xml</em> extension - in Windows you might have to <a class="reference external" href="https://social.technet.microsoft.com/wiki/contents/articles/1784.windows-how-to-view-file-name-extensions.aspx#:~:text=Windows:%20How%20to%20View%20File%20Name%20Extensions%20,check%20box,%20and%20then%20click%20OK.%20See%20More">turn on extensions</a>).</p></li>
+<li><p>Against <em>Select the Deal File</em>, select <em>&lt;tournament name and date&gt;.pbn</em>.</p></li>
+</ol>
+<p>You can navigate around the scores and boards to satisfy yourself that the upload has worked correctly</p>
+<p><a id='update_ebu'></a></p>
+</section>
+<section id="upload-to-ebu">
+<h2>Upload to EBU<a class="headerlink" href="#upload-to-ebu" title="Link to this heading">¶</a></h2>
+<ol>
+<li><p>Open the EBU website  tab (<a class="reference external" href="https://www.ebu.co.uk/members/v2/">https://www.ebu.co.uk/members/v2/</a></p></li>
+<li><p>click on <em>My EBU</em>;</p></li>
+<li><p>enter your personal EBU number and password;</p></li>
+<li><p>you might need to click on <em>Show all menus</em></p></li>
+<li><p>click on the <em>submit</em> tab on the top-right. Use <em>Browse</em> to select the file:</p>
+<p><em>&lt;tournament name and date&gt;.xml</em></p>
+<p>from your <em>Downloads</em> directory;</p>
+</li>
+<li><p>click on <em>Uploads</em>;</p></li>
+<li><p>you might get a request to resolve unknown players (for example if you have used substitutes). if you cannot find their details using the EBU search function, they can be recorded as guests.</p></li>
+</ol>
+</section>
+<section id="cleaning-up-redundant-files">
+<h2>Cleaning up redundant files<a class="headerlink" href="#cleaning-up-redundant-files" title="Link to this heading">¶</a></h2>
+<p>When you are satisfied that the results have all been uploaded, it might be as well to remove the work files from your <em>Downloads</em> directory. This is to avoid any confusion in future weeks because the file names will look similar. The files to remove are:</p>
+<ol class="simple">
+<li><p><em>&lt;tournament name and date&gt;.pbn</em></p></li>
+<li><p><em>&lt;tournament name and date&gt;.xml</em></p></li>
+<li><p><em>&lt;tournament name and date&gt;.csv</em></p></li>
+</ol>
+<p>And that is it for that tournament!</p>
+<p><span id="adjust_score"></span></p>
+</section>
+<section id="adjust-a-score">
+<h2>Adjust a score<a class="headerlink" href="#adjust-a-score" title="Link to this heading">¶</a></h2>
+<p>NB Scores can also be adjusted at the scoring stage (see <a href="scoring.html#create-the-files-for-uploading">Scoring</a>).</p>
+</section>
+<section id="access-a-user-s-historical-boards">
+<h2>Access a user’s historical Boards<a class="headerlink" href="#access-a-user-s-historical-boards" title="Link to this heading">¶</a></h2>
+<p>It might be useful to visit a board played by someone after the tournament is finished. This can be done using the BBO Hand Records feature</p>
+<p>Go to the link below (You might have to log in to BBO):</p>
+<p><a class="reference external" href="https://www.bridgebase.com/myhands/index.php">https://www.bridgebase.com/myhands/index.php</a></p>
+<p>You will see the following page:</p>
+<p><img alt="Select user" src="_images/historical_boards.png" /></p>
+<p>Change the user name to the one that you want and the dates if outside the range shown in the defaults.</p>
+<p>Click on <em>Get hands</em></p>
+<p><img alt="Get hands" src="_images/historical_boards_02.png" /></p>
+<p>In the list of tournaments and hands, click on the <em>Movie</em> link to view the way that the hand was played, e.g. Board 5:</p>
+<p><img alt="Display board" src="_images/historical_boards_03.png" /></p>
+<p>To create a link to the board:</p>
+<ul class="simple">
+<li><p>click on the address bar arrowed in the diagram above (it will change onto a long string of characters)</p></li>
+<li><p>copy and paste as necessary.</p></li>
+</ul>
+</section>
+</section>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2025, Jeff Watkins. Version: 0.0.16.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 8.2.0.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

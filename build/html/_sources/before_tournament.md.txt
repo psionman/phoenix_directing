@@ -1,0 +1,13 @@
+### Manage a tournament before it starts
+
+You can see *pending* tournaments in the *Director*'s tab
+
+The main uses or this are to:
+
+1. Change the tournaments settings
+
+1. Check who has registered
+
+1. Remove or contact pairs who are off-line and might delay the start of the event. If players are off-line when the tournament starts, they will not be seated.
+
+Note that if new players have been added after a tournament has been created and they wish to play in it, you  must modify the tournament (e.g. add a full stop or space to the tournament name) and re-save.

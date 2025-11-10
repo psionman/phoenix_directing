@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Creating a tournament &#8212; Directing a Phoenix Tournament  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="_static/bootstrap-sphinx.css?v=4468db6d" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=89215f19" />
+    <script src="_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <link rel="icon" href="_static/favicon.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Managing players" href="player_management.html" />
+    <link rel="prev" title="Introduction" href="introduction.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="_static/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+<script type="text/javascript" src="_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          Directing a Phoenix Tournament</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Creating a tournament</a></li>
+<li class="toctree-l1"><a class="reference internal" href="player_management.html">Managing players</a></li>
+<li class="toctree-l1"><a class="reference internal" href="directing_a_tournament.html">Directing a Tournament</a></li>
+<li class="toctree-l1"><a class="reference internal" href="directors_chat.html">Director’s chat</a></li>
+<li class="toctree-l1"><a class="reference internal" href="handling_queries.html">Handling Queries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="uploading_deal_files.html">Uploading deal files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="replaying_hands.html">Replaying hands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bbo_names.html">The <em>bbo_names.txt</em> file</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scoring.html">Scoring</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dollar_transfers.html">Transferring $BBO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="browser.html">Installing and configuring your browser</a></li>
+<li class="toctree-l1"><a class="reference internal" href="join_zoom.html">Join a Zoom Meeting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="real_bridge.html">Real Bridge</a></li>
+<li class="toctree-l1"><a class="reference internal" href="videos.html">Videos for Directors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="versions.html">Versions</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Creating a tournament</a><ul>
+<li><a class="reference internal" href="#using-bbo-s-tournament-scheduler">Using BBO’s Tournament scheduler</a></li>
+<li><a class="reference internal" href="#using-first-principles">Using first principles</a></li>
+<li><a class="reference internal" href="#copying-a-tournaments">Copying a tournaments</a></li>
+<li><a class="reference internal" href="#to-setup-a-24-board-tournament">To setup a 24 board tournament</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="introduction.html" title="Previous Chapter: Introduction"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Introduction</span>
+    </a>
+  </li>
+  <li>
+    <a href="player_management.html" title="Next Chapter: Managing players"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Managing players &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="_sources/create_tournament.md.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li><a class="reference internal" href="#">Creating a tournament</a><ul>
+<li><a class="reference internal" href="#using-bbo-s-tournament-scheduler">Using BBO’s Tournament scheduler</a></li>
+<li><a class="reference internal" href="#using-first-principles">Using first principles</a></li>
+<li><a class="reference internal" href="#copying-a-tournaments">Copying a tournaments</a></li>
+<li><a class="reference internal" href="#to-setup-a-24-board-tournament">To setup a 24 board tournament</a></li>
+</ul>
+</li>
+</ul>
+
+  <li>
+    <a href="introduction.html" title="Previous Chapter: Introduction"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Introduction</span>
+    </a>
+  </li>
+  <li>
+    <a href="player_management.html" title="Next Chapter: Managing players"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Managing players &raquo;</span>
+    </a>
+  </li>
+<div id="sourcelink">
+  <a href="_sources/create_tournament.md.txt"
+     rel="nofollow">Source</a>
+</div>
+<form action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+        </div>
+      </div>
+    <div class="body col-md-9 content" role="main">
+      
+  <section id="creating-a-tournament">
+<h1>Creating a tournament<a class="headerlink" href="#creating-a-tournament" title="Link to this heading">¶</a></h1>
+<section id="using-bbo-s-tournament-scheduler">
+<h2>Using BBO’s Tournament scheduler<a class="headerlink" href="#using-bbo-s-tournament-scheduler" title="Link to this heading">¶</a></h2>
+<p>BBO has a tool which allows you to automatically create tournaments froma scheduler ( see the <a class="reference external" href="https://blog.bridgebase.com/about-the-virtual-club-tournament-scheduler/?lid=w1pcd63w06so">documentation here</a>)</p>
+<ol>
+<li><p>Log into the scheduler at <a class="reference external" href="https://webutil.bridgebase.com/v2/vacbl/vacbl_login.php">https://webutil.bridgebase.com/v2/vacbl/vacbl_login.php</a></p>
+<p><img alt="Tournament Scheduler login" src="_images/tournament_scheduler_login.png" /></p>
+<p>Make sure you have <em>Host Name</em> selected, then add the club’s username and password.</p>
+<p>You will see the menu …</p>
+<p><img alt="Tournament Scheduler menu" src="_images/tournament_scheduler_menu.png" /></p>
+</li>
+<li><p>To create a schedule click on <em>Tournament Scheduler</em> and you will see the Tournament Scheduler</p>
+<p><img alt="Tournament Scheduler" src="_images/tournament_scheduler_create.png" /></p>
+<p>Note that the times are based on New York time and New York is usually 5 hours behind UK time. Our tournaments start at 14:20 New York time (use the 24 hour clock).</p>
+<p>NB check that the times are correct when we switch to and from British Summer Time.</p>
+<p>Tournaments are automatically created on the day that they are scheduled.</p>
+</li>
+<li><p>Once created, the tournaments can be modified as we currently do.</p></li>
+<li><p>The schedule can also be modified should it be necessary.</p></li>
+</ol>
+</section>
+<section id="using-first-principles">
+<h2>Using first principles<a class="headerlink" href="#using-first-principles" title="Link to this heading">¶</a></h2>
+<p>This document is based on the EBU document <a class="reference external" href="https://blog.bridgebase.com/2020/04/02/the-virtual-club-manager-manual/">Virtual Club Manager</a>. This has screen shots, but does not necessarily cover Phoenix’s policies. For a fuller description see <a class="reference external" href="https://doc.bridgebase.com/Help/Guide_for_BBO_TDs.pdf">Guide for Creating and Managing
+a Tournament on BBO</a>.</p>
+<ol>
+<li><p>Log into BBO using the club’s on-line director’s login name and password.</p></li>
+<li><p>Click on the <em>Director</em> tab.</p></li>
+<li><p>Click on the <em>Create Tournament</em> button.</p>
+<p>In the <em>Create Tournament</em> panel there are four tabs:</p>
+<ol>
+<li><p>the <em>Tournament</em> tab:</p>
+ <img src="_images/tournament_01.png" width="300"><ol>
+<li><p>Give the Tournament a title (this is seen by members searching for the tournament when they wish to register), e.g.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Phoenix Bridge Club 8 June 2020
+</pre></div>
+</div>
+</li>
+<li><p>Create or amend a Welcome Message if appropriate. (This is seen by members as the tournament launches.)</p></li>
+<li><p>The <em>Description</em> field is used to ensure that the tournament does not start until all registered players are on-line, and to define the movement.</p>
+<p>The code to handle registered player is <em>+allavail+</em>.</p>
+<p>We will use a Howell movement for eight tables or fewer and a Mitchell for nine tables or more. Here, we will set up the default as a Howell: <em>+howell+ +rounds9+</em>. (We currently expect eight or nine tables for our tournaments.)</p>
+<p>If nine or more tables register for an event the director need only remove the  text <em>+howell+ +rounds9+</em> from the description.</p>
+<p>For the avoidance of doubt:</p>
+<ol class="simple">
+<li><p>for 8 or fewer tables use: <em>+allavail+ +howell+ +rounds9+</em></p></li>
+<li><p>for 9 or more tables use: <em>+allavail+</em></p></li>
+</ol>
+<p>See the <a class="reference external" href="#description_table">table at the end of this section</a>.</p>
+<p>For more details see <a class="reference external" href="https://news.bridgebase.com/2020/11/17/description-settings-for-tournaments/">BBO Description settings for tournaments</a></p>
+<p>Avoid <em>+howell+ +hm18+</em> as this give revenge rounds for seven or eight tables (see <a class="reference external" href="https://blog.bridgebase.com/2020/04/18/how-to-run-howell-for-small-tourneys/">this BBO document</a>.)</p>
+</li>
+<li><p>Enter the hours, days and minutes until the tournament will start.</p>
+<p>The actual start time will be generated and shown for you to check. (The tournament remains hidden in the BBO events screen until two hours before the start time.)</p>
+</li>
+<li><p>Enter the BBO username of any other director associated with the event (if any). Please ensure that the <em>Club’s</em> director (vebu211328) is at the top of the list as all director’s calls go to the director at the top.</p></li>
+<li><p>The format should say <em>Pairs</em></p></li>
+</ol>
+</li>
+<li><p>the <em>Format</em> tab:</p>
+ <img src="_images/tournament_02.png" width="300"><ol class="simple">
+<li><p>Enter the number of hands to be played (18 or 24 for example). We use 18.</p></li>
+<li><p>The minutes to be allowed per board (6, 7 or 8 for example). We use 8. If a table has not completed a board they will be moved on at the expiry of the time at the table and BBO will attempt to allocate a score. If all of the tables have finished early, they will be moved on.</p></li>
+<li><p>The number of boards per round (2 or 3 for example)</p></li>
+<li><p>Scoring should be <em>Matchpoints</em></p></li>
+<li><p><em>Barometer</em> should be checked to allow players to see their scores during the game.</p></li>
+<li><p>Movement should be <em>Clocked</em></p></li>
+<li><p>Deal Source: <em>Use random deals</em></p></li>
+</ol>
+</li>
+<li><p>the <em>Options</em> tab:</p>
+ <img src="_images/tournament_03.png" width="300"><ol class="simple">
+<li><p>Kibitzers: <em>Do not allow</em></p></li>
+<li><p>Allow chat to tournament: uncheck both <em>For players</em> and <em>For kibitzers</em></p></li>
+<li><p>Table options: uncheck <em>Allow Undos</em> and <em>Allow Video</em></p></li>
+</ol>
+</li>
+<li><p>the <em>Entries</em> tab:</p>
+ <img src="_images/tournament_04.png" width="300"><ol class="simple">
+<li><p><em>Maximum entries</em>. This is the maximum number of <em>pairs</em> that will be allowed to register. (Generally we have no limit. The default is 40 which should be adequate.)</p></li>
+<li><p>Uncheck <em>Allow robots</em>. This means that players will not be able to elect to play with a robot as a partner. (NB do not create the tournament with this checked - you cannot remove it later and you will need to recreate the tournament from scratch.)</p></li>
+<li><p>In <em>Type</em> enter <em>BBUL</em></p></li>
+<li><p>Set the <em>Entry fee</em> to 300 (Note this is in cents not dollars)</p></li>
+<li><p>Uncheck <em>Stars plays free</em></p></li>
+<li><p>In <em>Restrictions</em> check:</p>
+<ol class="simple">
+<li><p>Include players followed by host</p></li>
+<li><p>Include custom list.</p></li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p>Finally, click on <em>Create Tournament</em>.</p></li>
+</ol>
+<span id="description_table"><table border="1" class="docutils">
+<thead>
+<tr>
+<th>Tables</th>
+<th>Description</th>
+<th>Boards</th>
+<th>Boards/round</th>
+<th>Works for</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3</td>
+<td>+allavail+ +howell+ +hm18+</td>
+<td>20</td>
+<td>4</td>
+<td>3 tables</td>
+</tr>
+<tr>
+<td>4</td>
+<td>+allavail+ +howell+ +hm18+</td>
+<td>18</td>
+<td>3</td>
+<td>4 tables</td>
+</tr>
+<tr>
+<td>5-8</td>
+<td>+allavail+ +howell+ +rounds9+</td>
+<td>18</td>
+<td>2</td>
+<td>5-8 tables</td>
+</tr>
+<tr>
+<td>9+</td>
+<td>+allavail+</td>
+<td>18</td>
+<td>2</td>
+<td>9+ tables</td>
+</tr>
+</tbody>
+</table><p><strong>NB</strong> Most things can be modified up to the point that the tournament starts, except <em>Allow robots</em> in the <em>Entries</em> section.</p>
+</section>
+<section id="copying-a-tournaments">
+<h2>Copying a tournaments<a class="headerlink" href="#copying-a-tournaments" title="Link to this heading">¶</a></h2>
+<p>As we are holding weekly tournaments, and the general format will not change, it makes sense to use the <em>Copy Tournament</em> function to create next week’s tournament.</p>
+<p>To create next week’s tournament, click on the <em>Directors</em> tab, select <em>Pending Tournaments</em>, and click on this week’s tournament. Choose <em>Edit Tournament</em> from the menu, and when the <em>Create Tournament</em> box appears, click on <em>Copy Tournament</em>. It then only remains to change the <em>Title</em> (NB th title will state “Pairs Bridge Club” and you should change the <em>Pairs</em> to <em>Phoenix</em>”) and add 7 days to the <em>Time until start</em>. Then click on <em>Modify Tournament</em> to save.</p>
+</section>
+<section id="to-setup-a-24-board-tournament">
+<h2>To setup a 24 board tournament<a class="headerlink" href="#to-setup-a-24-board-tournament" title="Link to this heading">¶</a></h2>
+<p>See <a class="reference external" href="https://forums.ebu.co.uk/discussion/1057/running-howell-movements-with-small-table-numbers">Running Howell movements with small table numbers</a> for a dicussion of settings for rounds and board numbers</p>
+<p>To create an 8x3 (24) board tournament</p>
+<p><img alt="24 board tournament identification" src="_images/twentyfour_boards_01.png" /></p>
+<p><img alt="24 board tournament boards" src="_images/twentyfour_boards_02.png" /></p>
+<p>To create an 7x3 (21) board tournament</p>
+<p><img alt="21 board tournament identification" src="_images/twentyone_boards_01.png" /></p>
+<p><img alt="21 board tournament boards" src="_images/twentyone_boards_02.png" /></p>
+</section>
+</section>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2025, Jeff Watkins. Version: 0.0.16.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 8.2.0.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

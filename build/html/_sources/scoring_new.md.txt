@@ -1,0 +1,99 @@
+### Create tournament
+
+This document is based on the EBU document [Virtual Club Manager](https://blog.bridgebase.com/2020/04/02/the-virtual-club-manager-manual/). This has screen shots, but does not necessarily cover Phoenix's policies.
+
+1. Log into BBO using the club's on-line director's login name and password.
+
+1. Click on the *Director* tab.
+
+1. Click on the *Create Tournament* button.
+
+    In the *Create Tournament* panel there are four tabs:
+
+    1. the *Tournament* tab:
+
+        1. Give the Tournament a title (this is seen by members searching for the tournament when they wish to register), e.g.
+            ```text
+            Phoenix Bridge Club 8 June 2020
+            ```
+
+        1. Create a Welcome Message (This is seen by members when they sign up for the tournament.)
+
+        1. In the *Description* field enter:
+            ```text
+            +availall+
+            ```
+            This is case sensitive and must be entered exactly as shown! This means that the tournament will not start until all members registered for the tournament are logged in.
+
+            This generates a Mitchell movement. Other movements might be more appropriate if there are fewer than nine tables ([see table at the end of this section](#howell)).
+
+        1. Enter the hours, days and minutes until the tournament will start.
+
+            The actual start time will be generated and shown for you to check. (The tournament remains hidden in the BBO events screen until two hours before the start time.)
+
+        1. Enter the BBO username of any other director associated with the event (if any). Please ensure that the *Club's* director (vebu211328) is at the top of the list as all director's calls go to the director at the top.
+
+        1. The format should say *pairs*
+
+    1. the *Format* tab:
+
+        1. Enter the number of hands to be played (18 or 24 for example)
+
+        1. The minutes to be allowed per board (6, 7 or 8 for example). If a table has not completed a board they will be moved on at the expiry of the time at the table and BBO will attempt to allocate a score. If all of the tables have finished early, they will be moved on.
+
+        1. The number of boards per round (2 or 3 for example)
+
+        1. Scoring should be *Matchpoints*
+
+        1. Barometer checked to allow players to see their scores during the game.
+
+        1. Movement should be *clocked*
+
+        1. Deal Source: *Use random deals*
+
+    1. the *Options* tab:
+
+        1. Kibitzers: *Do not allow*
+
+        1. Allow chat to tournament: uncheck both *players* and *kibitzers*
+
+        1. Table options: uncheck *undos*
+
+    1. the *Entries* tab:
+
+        1. Set the *Maximum entries*. This is the maximum number of *pairs* that will be allowed to register. (Generally we have no limit. The default is 40 which should be adequate.)
+
+        1. Uncheck *Allow robots*. This means that players will not be able to elect to play with a robot as a partner.
+
+        1. In *Type* enter *BBUL*
+
+        1. Set the *Entry fee* to 300 (Note this is in cents not dollars)
+
+        1. Uncheck *Stars plays free*
+
+        1. In *Restrictions* check:
+
+            1. Include players followed by host
+
+            1. Include custom list.
+
+1. Finally, click on *Create Tournament*.
+
+
+<span id="howell"></span>
+
+| Tables | Description | Boards | Boards/round | Works for |
+| --- | --- | --- | --- | --- |
+| 3-4 | +availall+ +howell+ +hm18+ | 18 | 3 | 3-6 tables |
+| 5-8 | +availall+ +howell+ +rounds9+ | 18 | 2 | 5-15 tables |
+| 9+ | +availall+ | 18 | 2 | 9+ tables |
+
+For more details see [Howell Movements](../Howell.pdf)
+
+**NB** Most things can be modified up to the point that the tournament starts, except *Allow robots* in the *Entries* section.
+
+###### Copying a tournaments
+
+As we are holding weekly tournaments, and the general format will not change, it makes sense to use the *Copy Tournament* function to create next week's tournament. A good time to do this, might be when the director has logged on before the start of a tournament.
+
+To create next week's tournament, click on the *Directors* tab, select *Pending Tournaments*, and click on week's tournament. Choose *Edit Tournament* from the menu, and when the *Create Tournament* box appears, click on *Copy Tournament*. It then only remains to change the *Title* and add 7 days to the *Time until start*. Then click on *Modify Tournament* to save.

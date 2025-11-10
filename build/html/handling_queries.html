@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Handling Queries &#8212; Directing a Phoenix Tournament  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="_static/bootstrap-sphinx.css?v=4468db6d" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=89215f19" />
+    <script src="_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <link rel="icon" href="_static/favicon.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Uploading deal files" href="uploading_deal_files.html" />
+    <link rel="prev" title="Director’s chat" href="directors_chat.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="_static/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+<script type="text/javascript" src="_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          Directing a Phoenix Tournament</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="create_tournament.html">Creating a tournament</a></li>
+<li class="toctree-l1"><a class="reference internal" href="player_management.html">Managing players</a></li>
+<li class="toctree-l1"><a class="reference internal" href="directing_a_tournament.html">Directing a Tournament</a></li>
+<li class="toctree-l1"><a class="reference internal" href="directors_chat.html">Director’s chat</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Handling Queries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="uploading_deal_files.html">Uploading deal files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="replaying_hands.html">Replaying hands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bbo_names.html">The <em>bbo_names.txt</em> file</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scoring.html">Scoring</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dollar_transfers.html">Transferring $BBO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="browser.html">Installing and configuring your browser</a></li>
+<li class="toctree-l1"><a class="reference internal" href="join_zoom.html">Join a Zoom Meeting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="real_bridge.html">Real Bridge</a></li>
+<li class="toctree-l1"><a class="reference internal" href="videos.html">Videos for Directors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="versions.html">Versions</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Handling Queries</a><ul>
+<li><a class="reference internal" href="#general">General</a></li>
+<li><a class="reference internal" href="#queries-that-you-feel-competent-to-handle">Queries that you feel competent to handle</a></li>
+<li><a class="reference internal" href="#queries-that-you-do-not-feel-competent-to-handle">Queries that you do not feel competent to handle</a></li>
+<li><a class="reference internal" href="#handling-difficult-situations">Handling difficult situations</a></li>
+<li><a class="reference internal" href="#escalating-queries">Escalating queries</a></li>
+<li><a class="reference internal" href="#table-history">Table history</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="directors_chat.html" title="Previous Chapter: Director’s chat"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Director’s chat</span>
+    </a>
+  </li>
+  <li>
+    <a href="uploading_deal_files.html" title="Next Chapter: Uploading deal files"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Uploading deal files &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="_sources/handling_queries.md.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li><a class="reference internal" href="#">Handling Queries</a><ul>
+<li><a class="reference internal" href="#general">General</a></li>
+<li><a class="reference internal" href="#queries-that-you-feel-competent-to-handle">Queries that you feel competent to handle</a></li>
+<li><a class="reference internal" href="#queries-that-you-do-not-feel-competent-to-handle">Queries that you do not feel competent to handle</a></li>
+<li><a class="reference internal" href="#handling-difficult-situations">Handling difficult situations</a></li>
+<li><a class="reference internal" href="#escalating-queries">Escalating queries</a></li>
+<li><a class="reference internal" href="#table-history">Table history</a></li>
+</ul>
+</li>
+</ul>
+
+  <li>
+    <a href="directors_chat.html" title="Previous Chapter: Director’s chat"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Director’s chat</span>
+    </a>
+  </li>
+  <li>
+    <a href="uploading_deal_files.html" title="Next Chapter: Uploading deal files"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Uploading deal files &raquo;</span>
+    </a>
+  </li>
+<div id="sourcelink">
+  <a href="_sources/handling_queries.md.txt"
+     rel="nofollow">Source</a>
+</div>
+<form action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+        </div>
+      </div>
+    <div class="body col-md-9 content" role="main">
+      
+  <section id="handling-queries">
+<h1>Handling Queries<a class="headerlink" href="#handling-queries" title="Link to this heading">¶</a></h1>
+<p>Not all of our BBO directors are qualified EBU directors. This is acceptable as the main opportunities for player error are eliminated by the BBO process. For example, it is not possible to bid or play out of turn and revoking is not possible. However, queries do occur and this page describes the Phoenix protocol for handling them.</p>
+<section id="general">
+<h2>General<a class="headerlink" href="#general" title="Link to this heading">¶</a></h2>
+<p>The club’s policy is to support BBO directors taking into account the fact that they may not be qualified directors. This includes a statement on the club website that draws attention to this and asks players to take this into account during play.</p>
+<p>The approach that you should take to a player query will depend on its nature and the attitude of the player.</p>
+</section>
+<section id="queries-that-you-feel-competent-to-handle">
+<h2>Queries that you feel competent to handle<a class="headerlink" href="#queries-that-you-feel-competent-to-handle" title="Link to this heading">¶</a></h2>
+<p>If a player makes a query that you have handled satisfactorily, then generally no further action is necessary. It is good practice to take a copy of the section of the <a class="reference external" href="#table-history">table history</a> that includes the transaction plus any context that you feel might be relevant.</p>
+</section>
+<section id="queries-that-you-do-not-feel-competent-to-handle">
+<h2>Queries that you do not feel competent to handle<a class="headerlink" href="#queries-that-you-do-not-feel-competent-to-handle" title="Link to this heading">¶</a></h2>
+<p>There may arise circumstances where you do feel confident to respond to the player making the enquiry. In these cases please gather as much information as you feel relevant during chat at the table including both sides of the question if the dispute warrants. Finally inform the players that you will take advice and get back to them. Do not feel under any pressure to resolve the matter there and then.</p>
+<p>Please take a copy of the section of the <a class="reference external" href="#table-history">table history</a> that includes the transaction plus any context that you feel might be relevant. This will ideally include all of the transactions while the pairs have been at that table.</p>
+</section>
+<section id="handling-difficult-situations">
+<h2>Handling difficult situations<a class="headerlink" href="#handling-difficult-situations" title="Link to this heading">¶</a></h2>
+<p>The nature of on-line  play often makes it difficult to set and judge the tone of a text chat message. Sometimes an ironic or self deprecating remark can come over as sarcasm or arrogance. Please keep a cool head in these circumstances and reply politely and in measured tones. If necessary, employ empathy (”I do understand” or I do understand it must be frustrating”). You can always remind a player that if they are not happy with your response they can contact the Club Chair. Try to remember that any annoyance or anger is not directed at you personally as you are simply following a procedure that all players implicitly agree to by playing at the club on BBO.</p>
+</section>
+<section id="escalating-queries">
+<h2>Escalating queries<a class="headerlink" href="#escalating-queries" title="Link to this heading">¶</a></h2>
+<p>If you are not scoring, and the query might affect the scores, please make sure that the scorer is aware of the query - ideally using the director’s Whatsapp group.</p>
+<p>The query with the relevant evidence that you have collected should be sent to the Principal Director by email. This should include:</p>
+<ul class="simple">
+<li><p>a description of the issue;</p></li>
+<li><p>the <a class="reference external" href="#table-history">table history</a>;</p></li>
+<li><p>a link to the BBO board (see <a class="reference external" href="scoring.html#access-a-user-s-historical-boards">Access a user’s historical Boards</a>).</p></li>
+</ul>
+<p>They will review and contact the relevant parties. They should also inform the scorer who can then take the appropriate action.</p>
+</section>
+<section id="table-history">
+<h2>Table history<a class="headerlink" href="#table-history" title="Link to this heading">¶</a></h2>
+<p>BBO provides a detailed history of all actions at a table during a tournament. This includes timestamped entries for:</p>
+<ul class="simple">
+<li><p>players sitting at the table;</p></li>
+<li><p>chat;</p></li>
+<li><p>bids;</p></li>
+<li><p>cardplay;</p></li>
+<li><p>claims;</p></li>
+<li><p>results;</p></li>
+<li><p>time taken by each player.</p></li>
+</ul>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>bbo logo Table activity: Table:6
+
+
+13:20:07 Round:1 Board:1
+13:20:07 aaa sits South.
+13:20:07 xxx sits West.
+13:20:07 bbb sits North.
+13:20:07 yyy sits East.
+13:20:17 aaa typed as table chat: Hi , we’re Bill &amp; Ben. We play Benji Acol - weak NT and weak 2s in majors. McKinney discards
+13:20:25 yyy typed as table chat: Hello, we are Jack and Jill. We play Benji Acol, weak NT, stayman, transfers, 4cms, weak 2s, KCG&amp;B and McKenney
+13:20:35 xxx typed as table chat: Hi both
+13:20:44 bbb typed as table chat: Hi both
+13:20:56 bbb bid 1D. (49 secs)
+13:21:02 yyy bid Pass.
+13:21:05 aaa bid Pass.
+13:21:13 xxx bid 1H.
+13:21:18 bbb bid Pass.
+13:21:30 yyy bid 1N. (12 secs)
+...
+</pre></div>
+</div>
+<p>Note that the times are 6 hours behind us (probably Eastern Standard Time).</p>
+<p>To see the table history:</p>
+<ol>
+<li><p>click on the tournament in the Director tab;</p></li>
+<li><p>click <em>Table History</em>;</p>
+ <img src="_images/table_history_01.png" alt="Select table history" width="400"><p> <p></p>
+</li>
+<li><p>enter the table number;</p>
+ <img src="_images/table_history_02.png" alt="Select table number" width="400"><p> <p></p>
+</li>
+<li><p>click on OK;</p>
+ <img src="_images/table_history_03.png" alt="Table history" width="400"></li>
+</ol>
+<p> <p>
+The table history gets quite long, but you can scroll to the desired section.</p>
+<p>To save  a section:</p>
+<ul class="simple">
+<li><p>use the mouse to highlight the relevant section of the history;</p></li>
+<li><p>right click and select copy or use&lt;CTRL&gt;+C;</p></li>
+<li><p>open a text editor (e.g. Notepad);</p></li>
+<li><p>right click and select paste or use &lt;CTRL&gt;+V;</p></li>
+<li><p>save the text in a location that will be able to find (e.g. <em>docs/bbo-logs</em>) and use a meaningful name (e.g. <em><username>-query.txt</em>).</p></li>
+</ul>
+</section>
+</section>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2025, Jeff Watkins. Version: 0.0.16.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 8.2.0.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

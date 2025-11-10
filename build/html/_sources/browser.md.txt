@@ -1,0 +1,61 @@
+
+# Installing and configuring your browser #
+
+Most of the scoring functions are undertaken in a browser and one function in particular, the [BBX add on](#installing-the-bbx-addon), must  be run in Chrome or one of its derivatives ([Vivaldi](https://vivaldi.com/download/) or [Opera](https://www.opera.com/download)). If necessary, you should install [chrome.html](https://www.google.com/chrome.html/)
+and use it for scoring.
+
+The [BBX add on](#installing-the-bbx-addon) is an essential part of the system and must be installed; the [Multiple URL Opener addon](#multiple-url-opener-addon) is optional.
+
+## URLs that are needed for the scoring process ##
+
+    https://docs.google.com/spreadsheets/d/1DLdT67k0hdONGrm2uKFwJbjO8RcYBOj5Rj3SXpfior0
+    http://webutil.bridgebase.com/v2/tarchive.php?m=h&h=vEBU211328&d=vEBU211328
+    https://dds.bridgewebs.com/bbotoxml/bbotoxml.htm?p=1
+    https://www.bridgewebs.com/cgi-bin/bwoq/bw.cgi?club=phoenix&pid=upload_results
+    https://www.ebu.co.uk/members/v2/
+
+Hover over the list and click on the *copy* icon int the top right hand corner to copy to the clipboard.
+
+## Installing the BBX addon ##
+
+In the browser, navigate to the following URL:
+
+[https://chrome.google.com/webstore/detail/bbo-extractor/omcdgcoibkfkiikoniabecnbbacmhfij](https://chrome.google.com/webstore/detail/bbo-extractor/omcdgcoibkfkiikoniabecnbbacmhfij)
+
+Click on the *Add to Chrome* button.
+
+A small icon with the legend *BBX* should appear in the top-right of the browser. You will be using this later.
+
+Pin to address bar by clicking on the jigsaw icon and licking on the pin next to the extension.
+
+In settings, make sure that both *Automatically allow access on the following sites*  and *Allow access to file URLs* are on, and *Allow in incognito* must be off.
+
+## Opening multiple urls ##
+
+### Multiple URL Opener addon ###
+
+This is optional; you may choose to adopt the bookmark approach instead.
+
+Install the [Multiple URL Opener](https://chrome.google.com/webstore/detail/multiple-url-opener/lompiehpjobkhelnjlhjiedhddijiekg) in Chrome. Add the above [list of urls](#urls-that-are-needed-for-the-scoring-process) and save it. You can then open all of the tabs you need with one click. You might wish to 'pin' this app to the browser so that it is always there.
+
+### Opening multiple urls with bookmarks ###
+
+This approach means that you do not have to load another extension.
+
+In your browser's bookmarks create a new folder (e.g. *Phoenix scoring*). Open all of the urls in the above [list of urls](#urls-that-are-needed-for-the-scoring-process), and bookmark them in the new folder. To open all of the urls, simply click on the folder in bookmarks.
+
+### The hard way ###
+
+Otherwise, I recommend that you have this page open in a tab in your web browser. There are many complicated URLs used in this process and it is easier to open them by clicking rather than copy and paste or typing in.
+
+[https://docs.google.com/spreadsheets/d/1DLdT67k0hdONGrm2uKFwJbjO8RcYBOj5Rj3SXpfior0](https://docs.google.com/spreadsheets/d/1DLdT67k0hdONGrm2uKFwJbjO8RcYBOj5Rj3SXpfior0)
+
+[http://webutil.bridgebase.com/v2/tarchive.php?m=h&h=vEBU211328&d=vEBU211328](http://webutil.bridgebase.com/v2/tarchive.php?m=h&h=vEBU211328&d=vEBU211328)
+
+[https://dds.bridgewebs.com/bbotoxml/bbotoxml.htm?p=1](https://dds.bridgewebs.com/bbotoxml/bbotoxml.htm?p=1)
+
+[https://www.bridgewebs.com/cgi-bin/bwoq/bw.cgi?club=phoenix&pid=upload_results](https://www.bridgewebs.com/cgi-bin/bwoq/bw.cgi?club=phoenix&pid=upload_results)
+
+[https://www.ebu.co.uk/members/v2/](https://www.ebu.co.uk/members/v2/)
+
+I suggest that rather then just clicking on links, you right-click and use *Open Link in New Tab*. This means that this page always open.
