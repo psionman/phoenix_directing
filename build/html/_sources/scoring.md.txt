@@ -16,7 +16,7 @@ Then send the ammended xml file to
 
     results@simpairs.com
 
-The subject line should be "<session number> England"
+The subject line should be "\<session number> England"
 
 e.g. *4136 England*
 
