@@ -195,10 +195,20 @@
 <section id="cin-and-other-charity-tournaments">
 <h2>CIN and other charity tournaments<a class="headerlink" href="#cin-and-other-charity-tournaments" title="Link to this heading">¶</a></h2>
 <p>The UMS code for CIN tournaments is 06 and for other charity events 03!</p>
-<p>After the CIN event you need to send the xml file to</p>
-<p>results&#64;simpairs.com</p>
+<p>After the CIN event edit the xml results file and change the line</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">CLUB_NAME</span><span class="o">&gt;</span><span class="n">Phoenix</span> <span class="n">Bridge</span> <span class="n">Club</span><span class="o">&lt;/</span><span class="n">CLUB_NAME</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>to</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">CLUB_NAME</span><span class="o">&gt;</span><span class="n">Phoenix</span> <span class="n">Bridge</span> <span class="n">Club</span> <span class="n">BBO</span><span class="o">&lt;/</span><span class="n">CLUB_NAME</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>Then send the ammended xml file to</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">results</span><span class="nd">@simpairs</span><span class="o">.</span><span class="n">com</span>
+</pre></div>
+</div>
 <p>The subject line should be “<session number> England”</p>
-<p>e.g. *4136 England”</p>
+<p>e.g. <em>4136 England</em></p>
 </section>
 <section id="prerequisites">
 <h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Link to this heading">¶</a></h2>
@@ -356,7 +366,7 @@ a message: <em>xx names loaded</em> where <em>xx</em> is the number of names in 
       
     </p>
     <p>
-        &copy; Copyright 2025, Jeff Watkins. Version: 0.0.17.<br/>
+        &copy; Copyright 2025, Jeff Watkins. Version: 0.0.18.<br/>
       Created using <a href="http://sphinx-doc.org/">Sphinx</a> 8.2.0.<br/>
     </p>
   </div>

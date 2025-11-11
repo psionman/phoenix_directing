@@ -4,13 +4,21 @@
 
 The UMS code for CIN tournaments is 06 and for other charity events 03!
 
-After the CIN event you need to send the xml file to
+After the CIN event edit the xml results file and change the line
 
-results@simpairs.com
+    <CLUB_NAME>Phoenix Bridge Club</CLUB_NAME>
+
+to
+
+    <CLUB_NAME>Phoenix Bridge Club BBO</CLUB_NAME>
+
+Then send the ammended xml file to
+
+    results@simpairs.com
 
 The subject line should be "<session number> England"
 
-e.g. *4136 England"
+e.g. *4136 England*
 
 ## Prerequisites ##
 
