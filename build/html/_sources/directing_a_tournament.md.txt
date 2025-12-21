@@ -52,6 +52,13 @@ N.B. *+allavail+ +howell+ +rounds9+* creates a Howell movement even for tourname
 
 <img src="_images/change_boards_per_round.png" alt="Select player" width="400">
 
+## Delaying the launch
+
+Should you need to delay the launch, you may do so by increaing the *Time until start* in the *Edit Tournament* tab
+
+<img src="_images/time_to_start.png" alt="Time to start" width="400">
+
+
 ## The partnership desk
 
 If more than one player is in the partnership desk as the launch approaches, then message them and ask them to pair up. One can invite the other.
